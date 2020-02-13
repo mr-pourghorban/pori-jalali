@@ -1,0 +1,107 @@
+
+
+.datepicker-container input {
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+  .calendar{
+    max-width: fit-content;
+    width: 300px;
+    min-width: 300px !important;
+    max-width: 300px !important;
+    position: fixed !important;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 0px;
+    padding: 10px;
+    ::ng-deep .btn{
+      border-radius: 0px !important;
+    }
+    ::ng-deep .calendar__body{
+      margin-top: 5px !important;
+    }
+    ::ng-deep .day{
+      margin-bottom: 0;
+      padding: 1px 0px;
+      &:not(.empty){
+        span{
+          padding: 0.9rem !important;
+        }
+      }
+    }
+    ::ng-deep .days{
+      margin-top: 5px;
+    }
+    ::ng-deep .month-nav{
+      min-width: 0px;
+      font-size: 14px;
+    }
+    ::ng-deep .year-nav{
+      min-width: 0px;
+      font-size: 14px;
+    }
+  
+    ::ng-deep .day-names{
+      background: var(--primary-color);
+      font-size: 14px !important;
+      padding: 3px 0 !important;
+    }
+    ::ng-deep .btn{
+      background: var(--primary-color) !important;
+      color: #fff !important;
+      border-radius: 50px !important;
+      padding: 7px;
+      &:hover{
+        background: var(--primary-color) !important;
+        color: #fff !important;
+      }
+    }
+    .close-calendar{
+      background: var(--primary-color);
+      color: #fff !important;
+      padding: 0 5px !important;
+      height: 30px !important;
+      font-size: 14px;
+      border-radius: 0 !important;
+  
+      &:hover{
+        background: var(--primary-color) !important;
+        color: #fff !important;
+      }
+    }
+    
+    .calendar__nav{
+      flex-direction: row !important;
+      justify-content: space-between !important;
+  
+      a.btn{
+        padding: 0.375rem 0.35rem !important;
+      }
+      &>div{
+        min-width: 0 !important;
+      }
+    }
+    .empty{
+      span{
+        :hover{
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+  
+  .time-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    dx-number-box{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .time{
+      display: flex;
+      flex-direction: row;
+    }
+  }
